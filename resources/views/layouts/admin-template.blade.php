@@ -28,10 +28,10 @@
 <div class="wrapper">
 
   <!-- Header -->
-  @include('header')
+  @include('includes.header')
 
   <!-- Sidebar -->
-  @include('sidebar')
+  @include('includes.sidebar')
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -58,7 +58,7 @@
   <!-- /.content-wrapper -->
 
 <!-- Footer -->
-@include('footer')
+@include('includes.footer')
 
 </div>
 
