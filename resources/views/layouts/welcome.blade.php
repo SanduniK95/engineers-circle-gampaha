@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="{{ asset("now-ui-landing/assets/img/favicon.png") }}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Now UI Kit by Creative Tim
+    Engineer's Circle Gampaha
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!-- Fonts and icons -->
@@ -15,14 +15,14 @@
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <!-- CSS Files -->
   <link href="{{ asset("now-ui-landing/assets/css/bootstrap.min.css") }}" rel="stylesheet" />
-  <link href="{{ asset("now-ui-landing/assets/css/now-ui-kit.css?v=1.2.0") }}" rel="stylesheet" />
+  <link href="{{ asset("now-ui-landing/assets/css/now-ui-kit.css") }}" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="{{ asset("now-ui-landing/assets/demo/demo.css") }}" rel="stylesheet" />
 </head>
 
 <body class="landing-page sidebar-collapse">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
+  <nav class="navbar navbar-expand-lg bg-success-new fixed-top navbar-transparent " color-on-scroll="400">
     <div class="container">
       <div class="dropdown button-dropdown">
         <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
@@ -90,13 +90,13 @@
         <div class="container">
           <h1 class="title">This is our great company.</h1>
           <div class="text-center">
-            <a href="#pablo" class="btn btn-primary btn-icon btn-round">
+            <a href="#pablo" class="btn btn-success-new btn-icon btn-round">
               <i class="fab fa-facebook-square"></i>
             </a>
-            <a href="#pablo" class="btn btn-primary btn-icon btn-round">
+            <a href="#pablo" class="btn btn-success-new btn-icon btn-round">
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="#pablo" class="btn btn-primary btn-icon btn-round">
+            <a href="#pablo" class="btn btn-success-new btn-icon btn-round">
               <i class="fab fa-google-plus"></i>
             </a>
           </div>
@@ -111,13 +111,13 @@
             <h5 class="description">According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.</h5>
           </div>
         </div>
-        <div class="separator separator-primary"></div>
+        <div class="separator separator-success-new"></div>
         <div class="section-story-overview">
           <div class="row">
             <div class="col-md-6">
               <div class="image-container image-left" style="background-image: url('{{ asset("now-ui-landing/assets/img/login.jpg") }}')">
                 <!-- First image on the left side -->
-                <p class="blockquote blockquote-primary">"Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly"
+                <p class="blockquote blockquote-success-new">"Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly"
                   <br>
                   <br>
                   <small>-NOAA</small>
@@ -151,35 +151,35 @@
               <div class="team-player">
                 <img src="{{ asset("now-ui-landing/assets/img/avatar.jpg") }}" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                 <h4 class="title">Romina Hadid</h4>
-                <p class="category text-primary">Model</p>
+                <p class="category text-success-new">Model</p>
                 <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                   <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-instagram"></i></a>
-                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-facebook-square"></i></a>
+                <a href="#pablo" class="btn btn-success-new btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+                <a href="#pablo" class="btn btn-success-new btn-icon btn-round"><i class="fab fa-instagram"></i></a>
+                <a href="#pablo" class="btn btn-success-new btn-icon btn-round"><i class="fab fa-facebook-square"></i></a>
               </div>
             </div>
             <div class="col-md-4">
               <div class="team-player">
                 <img src="{{ asset("now-ui-landing/assets/img/ryan.jpg") }}" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                 <h4 class="title">Ryan Tompson</h4>
-                <p class="category text-primary">Designer</p>
+                <p class="category text-success-new">Designer</p>
                 <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                   <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-linkedin"></i></a>
+                <a href="#pablo" class="btn btn-success-new btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+                <a href="#pablo" class="btn btn-success-new btn-icon btn-round"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
             <div class="col-md-4">
               <div class="team-player">
                 <img src="{{ asset("now-ui-landing/assets/img/eva.jpg") }}" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                 <h4 class="title">Eva Jenner</h4>
-                <p class="category text-primary">Fashion</p>
+                <p class="category text-success-new">Fashion</p>
                 <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                   <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-google-plus"></i></a>
-                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-youtube"></i></a>
-                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+                <a href="#pablo" class="btn btn-success-new btn-icon btn-round"><i class="fab fa-google-plus"></i></a>
+                <a href="#pablo" class="btn btn-success-new btn-icon btn-round"><i class="fab fa-youtube"></i></a>
+                <a href="#pablo" class="btn btn-success-new btn-icon btn-round"><i class="fab fa-twitter"></i></a>
               </div>
             </div>
           </div>
@@ -212,7 +212,7 @@
               <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
             </div>
             <div class="send-button">
-              <a href="#pablo" class="btn btn-primary btn-round btn-block btn-lg">Send Message</a>
+              <a href="#pablo" class="btn btn-success-new btn-round btn-block btn-lg">Send Message</a>
             </div>
           </div>
         </div>
