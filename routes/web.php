@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('admin', function () {
     return view('layouts.admin-template');
 });
+
+Route::get('admin/createproject',function(){
+	return view('admin/createproject');
+});
