@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="{{ asset("now-ui-landing/assets/img/favicon.png") }}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Engineer's Circle Gampaha
+    Engineers' Circle Gampaha
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!-- Fonts and icons -->
@@ -24,25 +24,8 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-success-new fixed-top navbar-transparent " color-on-scroll="400">
     <div class="container">
-      <div class="dropdown button-dropdown">
-        <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
-          <span class="button-bar"></span>
-          <span class="button-bar"></span>
-          <span class="button-bar"></span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-header">Dropdown header</a>
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">One more separated link</a>
-        </div>
-      </div>
       <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/now-ui-kit/index.html" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
+        <a class="navbar-brand" href="https://demos.creative-tim.com/now-ui-kit/index.html"target="_blank">
           Now Ui Kit
         </a>
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,22 +67,11 @@
   <!-- End Navbar -->
   <div class="wrapper">
     <div class="page-header page-header-small">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('{{ asset("now-ui-landing/assets/img/bg6.jpg") }}');">
+      <div class="page-header-image" data-parallax="true" style="background-image: url('{{ asset("now-ui-landing/assets/img/DSC_0215_edit.jpg") }}');">
       </div>
       <div class="content-center">
         <div class="container">
-          <h1 class="title">This is our great company.</h1>
-          <div class="text-center">
-            <a href="#pablo" class="btn btn-success-new btn-icon btn-round">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href="#pablo" class="btn btn-success-new btn-icon btn-round">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#pablo" class="btn btn-success-new btn-icon btn-round">
-              <i class="fab fa-google-plus"></i>
-            </a>
-          </div>
+          <h1 class="title">Engineers' Circle Gampaha</h1>
         </div>
       </div>
     </div>
@@ -108,7 +80,7 @@
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title">Who we are?</h2>
-            <h5 class="description">According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.</h5>
+            <h5 class="description"><b>Engineers' Circle Gampaha</b> is a forum for Engineers to share their experiences and enhance the relationships among the fellow Engineers towards the betterment of society.</h5>
           </div>
         </div>
         <div class="separator separator-success-new"></div>
@@ -117,10 +89,11 @@
             <div class="col-md-6">
               <div class="image-container image-left" style="background-image: url('{{ asset("now-ui-landing/assets/img/login.jpg") }}')">
                 <!-- First image on the left side -->
-                <p class="blockquote blockquote-success-new">"Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly"
+                <p class="blockquote blockquote-success-new">
+                  <small>We are ECG!</small>
                   <br>
                   <br>
-                  <small>-NOAA</small>
+                "For 20 years we at ECG have worked hand in hand and served the community in many ways."
                 </p>
               </div>
               <!-- Second image on the left side of the article -->
@@ -129,13 +102,12 @@
             <div class="col-md-5">
               <!-- First image on the right side, above the article -->
               <div class="image-container image-right" style="background-image: url('{{ asset("now-ui-landing/assets/img/bg1.jpg") }}')"></div>
-              <h3>So what does the new record for the lowest level of winter ice actually mean</h3>
-              <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
+              <h3>Our Story</h3>
+              <p>The Engineers' Circle was established on 4th October 1998 with the intention of creating a "forum for Engineers in the Gampaha District to share their experiences and contribute towards the betterment of the society." Established with the participation of twenty Engineers residing in and around of Gampaha, present membership boasts of over two hundred members spread over government and private sectors.
               </p>
-              <p>
-                For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade.
+              <p>ECG is a non profit organization  and holds its events regularly, most preferably quarterly. The activities are mainly concentrated on Corporate Social Responsibility (CSR).
               </p>
-              <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
+              <p>A vital element in the Circle’s community engagement strategy is member volunteerism. The ECG functions on the assistance of the Circle's member volunteers in all its CSR projects. Member volunteerism is also a means of attracting and retaining members, with new recruits being made aware of volunteering opportunities and encouraged to volunteer as a part of the CSR programme of the ECG. More than 100 member volunteers along with their family members engage in projects undertaken by the ECG each year.
               </p>
             </div>
           </div>
