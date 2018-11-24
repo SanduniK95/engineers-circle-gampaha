@@ -19,6 +19,8 @@ Route::get('admin', function () {
     return view('layouts.admin-template');
 });
 
-Route::get('admin/createproject',function(){
-	return view('admin/createproject');
+Route::get('admin/create_project',function(){
+	return view('admin/create_project');
 });
+
+Route::post('admin/create_project/add','projectController@add');

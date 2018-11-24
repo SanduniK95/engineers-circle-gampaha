@@ -1,24 +1,25 @@
 @extends('layouts.admin-template')
 
 @section('content')
-  <form>
+  <form method="post" action="/admin/create_project/add">
+    {{ csrf_field() }}
     <div class="container-fluid">
     <div class="form-group">
       <label for="projectName">Project Name</label>
-      <input type="text" name="projectName" class="form-control" id="projectName" placeholder="Project Name">
+      <input type="text" name="projectName" class="form-control" id="projectName" placeholder="Project Name" required>
     </div>
     <div class="form-group">
       <label for="date">Date</label>
-       <input class="date form-control" type="text" placeholder="Date">
+       <input type="text" name="date" class="date form-control" placeholder="Date" required>
     </div>  
 
     <div class="form-group">
       <label for="time">Time</label>
-      <input type="text" name="time" class="form-control" id="time" placeholder="Time">
+      <input type="text" name="time" class="form-control" id="time" placeholder="Time" required>
     </div>
     <div class="form-group">
       <label for="venue">Venue</label>
-      <input type="text" name="venue" class="form-control" id="venue" placeholder="Venue">
+      <input type="text" name="venue" class="form-control" id="venue" placeholder="Venue" required>
     </div>
     <button type="submit" class="btn btn-primary">Create Project</button>
   </div>
