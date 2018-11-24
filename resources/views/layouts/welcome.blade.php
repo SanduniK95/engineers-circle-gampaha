@@ -17,7 +17,7 @@
   <link href="{{ asset("now-ui-landing/assets/css/bootstrap.min.css") }}" rel="stylesheet" />
   <link href="{{ asset("now-ui-landing/assets/css/now-ui-kit.css") }}" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="{{ asset("now-ui-landing/assets/demo/demo.css") }}" rel="stylesheet" />
+  <!-- <link href="{{ asset("now-ui-landing/assets/demo/demo.css") }}" rel="stylesheet" /> -->
 </head>
 
 <body class="landing-page sidebar-collapse">
@@ -25,8 +25,8 @@
   <nav class="navbar navbar-expand-lg bg-success-new fixed-top navbar-transparent " color-on-scroll="400">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/now-ui-kit/index.html"target="_blank">
-          Now Ui Kit
+        <a class="navbar-brand" href="">
+          Engineers' Circle Gampaha
         </a>
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-bar top-bar"></span>
@@ -34,13 +34,13 @@
           <span class="navbar-toggler-bar bottom-bar"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="{{ asset("now-ui-landing/assets/img/blurred-image-1.jpg") }}">
+      <div class="collapse navbar-collapse navbar-collapse justify-content-end" id="navigation">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Back to Kit</a>
+            <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/creativetimofficial/now-ui-kit/issues">Have an issue?</a>
+            <a class="nav-link" href="https://github.com/creativetimofficial/now-ui-kit/issues">Our Story</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
@@ -75,7 +75,7 @@
         </div>
       </div>
     </div>
-    <div class="section section-about-us">
+    <div class="section section-about-us" id="about">
       <div class="container">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
