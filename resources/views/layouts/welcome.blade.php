@@ -16,8 +16,7 @@
   <!-- CSS Files -->
   <link href="{{ asset("now-ui-landing/assets/css/bootstrap.min.css") }}" rel="stylesheet" />
   <link href="{{ asset("now-ui-landing/assets/css/now-ui-kit.css") }}" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <!-- <link href="{{ asset("now-ui-landing/assets/demo/demo.css") }}" rel="stylesheet" /> -->
+  <link href="{{ asset("now-ui-landing/assets/css/ecg-style.css") }}" rel="stylesheet" />
 </head>
 
 <body class="landing-page sidebar-collapse">
@@ -40,25 +39,10 @@
             <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/creativetimofficial/now-ui-kit/issues">Our Story</a>
+            <a class="nav-link" href="#story">Our Story</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
-              <i class="fab fa-twitter"></i>
-              <p class="d-lg-none d-xl-none">Twitter</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
-              <i class="fab fa-facebook-square"></i>
-              <p class="d-lg-none d-xl-none">Facebook</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-              <i class="fab fa-instagram"></i>
-              <p class="d-lg-none d-xl-none">Instagram</p>
-            </a>
+            <a class="nav-link" href="#contact">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -83,7 +67,7 @@
             <h5 class="description"><b>Engineers' Circle Gampaha</b> is a forum for Engineers to share their experiences and enhance the relationships among the fellow Engineers towards the betterment of society.</h5>
           </div>
         </div>
-        <div class="separator separator-success-new"></div>
+        <div class="separator separator-success-new" id="story"></div>
         <div class="section-story-overview">
           <div class="row">
             <div class="col-md-6">
@@ -102,7 +86,7 @@
             <div class="col-md-5">
               <!-- First image on the right side, above the article -->
               <div class="image-container image-right" style="background-image: url('{{ asset("now-ui-landing/assets/img/bg1.jpg") }}')"></div>
-              <h3>Our Story</h3>
+              <h2 class="title">Our Story</h2>
               <p>The Engineers' Circle was established on 4th October 1998 with the intention of creating a "forum for Engineers in the Gampaha District to share their experiences and contribute towards the betterment of the society." Established with the participation of twenty Engineers residing in and around of Gampaha, present membership boasts of over two hundred members spread over government and private sectors.
               </p>
               <p>ECG is a non profit organization  and holds its events regularly, most preferably quarterly. The activities are mainly concentrated on Corporate Social Responsibility (CSR).
@@ -158,7 +142,7 @@
         </div>
       </div>
     </div>
-    <div class="section section-contact-us text-center">
+    <div class="section section-contact-us text-center" id="contact">
       <div class="container">
         <h2 class="title">Want to work with us?</h2>
         <p class="description">Your project is very important to us.</p>
@@ -195,29 +179,24 @@
         <nav>
           <ul>
             <li>
-              <a href="https://www.creative-tim.com">
-                Creative Tim
-              </a>
-            </li>
+              <i class="fa fa-envelope"></i>
+              &nbsp; 57, Vijaya Road, Gampaha
+            </li><br>
             <li>
-              <a href="http://presentation.creative-tim.com">
-                About Us
-              </a>
-            </li>
+              <i class="fas fa-phone"></i>
+              &nbsp; 033 222 6322
+            </li><br>
             <li>
-              <a href="http://blog.creative-tim.com">
-                Blog
-              </a>
+              <i class="fas fa-at    "></i>
+              &nbsp; info@engineerscirclegampaha.org
             </li>
           </ul>
         </nav>
         <div class="copyright" id="copyright">
-          &copy;
+          Copyright &copy;
           <script>
             document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-          </script>, Designed by
-          <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by
-          <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+          </script> Engineers' Circle Gampaha
         </div>
       </div>
     </footer>
