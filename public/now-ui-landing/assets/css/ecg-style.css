@@ -2,3 +2,11 @@ footer div nav ul li {
   font-size: 0.8571em;
   padding-bottom: 0.6em;
 }
+
+.carousel-inner {
+  height: 450px !important;
+}
+
+.carousel-inner > .carousel-item > img {
+  object-fit: cover;
+}

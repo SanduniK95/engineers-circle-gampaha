@@ -42,7 +42,16 @@
             <a class="nav-link" href="#story">Our Story</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#memories">Our Memories</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Log In</a>
           </li>
         </ul>
       </div>
@@ -98,10 +107,48 @@
         </div>
       </div>
     </div>
-    <div class="section section-team text-center">
+    <div class="section section-carousel text-center" id="memories">
       <div class="container">
-        <h2 class="title">Here is our team</h2>
-        <div class="team">
+        <h2 class="title">Our Memories</h2>
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="https://images.pexels.com/photos/1624254/pexels-photo-1624254.jpeg?auto=compress&cs=tinysrgb&h=350" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>...</h5>
+                <p>...</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://images.pexels.com/photos/1443657/pexels-photo-1443657.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>...</h5>
+                <p>...</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://images.pexels.com/photos/673803/pexels-photo-673803.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>...</h5>
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!-- <div class="team">
           <div class="row">
             <div class="col-md-4">
               <div class="team-player">
@@ -139,7 +186,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="section section-contact-us text-center" id="contact">
@@ -187,7 +234,7 @@
               &nbsp; 033 222 6322
             </li><br>
             <li>
-              <i class="fas fa-at    "></i>
+              <i class="fas fa-at"></i>
               &nbsp; info@engineerscirclegampaha.org
             </li>
           </ul>
@@ -212,7 +259,7 @@
   <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
   <script src="{{ asset("now-ui-landing/assets/js/plugins/bootstrap-datepicker.js") }}" type="text/javascript"></script>
   <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
   <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
   <script src="{{ asset("now-ui-landing/assets/js/now-ui-kit.js?v=1.2.0") }}" type="text/javascript"></script>
 </body>
