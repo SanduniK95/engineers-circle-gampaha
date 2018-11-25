@@ -19,6 +19,10 @@ Route::get('admin', function () {
     return view('layouts.admin-template');
 });
 
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('admin/createproject',function(){
 	return view('admin/createproject');
 });
