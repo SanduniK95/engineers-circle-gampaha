@@ -18,3 +18,17 @@ Route::get('/', function () {
 Route::get('admin', function () {
     return view('layouts.admin-template');
 });
+
+Route::get('admin/sendmail', function () {
+    return view('admin.sendmail');
+});
+
+Route::get('admin/sendmail', function () {
+    return view('admin.sendmail');
+});
+
+Route::get('admin/viewUsers', function () {
+    return view('admin.viewUserdetail');
+});
+
+Route::post('/create','MailController@store');
