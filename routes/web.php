@@ -19,6 +19,8 @@ Route::get('admin', function () {
     return view('layouts.admin-template');
 });
 
+Route::post('admin/create_project/add','projectController@add');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
