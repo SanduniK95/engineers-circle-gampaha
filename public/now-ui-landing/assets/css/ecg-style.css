@@ -1,0 +1,20 @@
+.navbar .navbar-brand {
+  font-size: 1.25em;
+}
+
+.navbar .navbar-nav .nav-link:not(.btn) {
+  font-size: 0.85em;
+}
+
+footer div nav ul li {
+  font-size: 0.8571em;
+  padding-bottom: 0.6em;
+}
+
+.carousel-inner {
+  height: 500px !important;
+}
+
+.carousel-inner > .carousel-item > img {
+  object-fit: cover;
+}
