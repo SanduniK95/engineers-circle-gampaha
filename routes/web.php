@@ -32,3 +32,13 @@ Route::get('admin/viewUsers', function () {
 });
 
 Route::post('/create','MailController@store');
+
+Route::post('admin/create_project/add','projectController@add');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('admin/createproject',function(){
+	return view('admin/createproject');
+});
