@@ -12,15 +12,33 @@
 */
 
 Route::get('/', function () {
-    return view('layouts.welcome');
+    return view('welcome');
 });
 
 Route::get('admin', function () {
     return view('layouts.admin-template');
 });
 
-Route::get('admin/create_project',function(){
-	return view('admin/create_project');
+Route::get('admin/sendmail', function () {
+    return view('admin.sendmail');
 });
 
+Route::get('admin/sendmail', function () {
+    return view('admin.sendmail');
+});
+
+Route::get('admin/viewUsers', function () {
+    return view('admin.viewUserdetail');
+});
+
+Route::post('/create','MailController@store');
+
 Route::post('admin/create_project/add','projectController@add');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('admin/createproject',function(){
+	return view('admin/createproject');
+});
