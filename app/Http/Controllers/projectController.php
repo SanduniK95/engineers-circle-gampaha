@@ -12,6 +12,7 @@ class projectController extends Controller
     {
     	$project = new Project();
     	$project->project_name = $request->projectName;
+    	$project->description = $request->description;
     	$project->date = $request->date;
     	$project->time = $request->time;
     	$project->venue = $request->venue;

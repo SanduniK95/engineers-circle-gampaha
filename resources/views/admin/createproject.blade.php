@@ -1,12 +1,16 @@
 @extends('layouts.admin-template')
 
 @section('content')
-  <form method="post" action="/admin/create_project/add">
+  <form method="post" action="/admin/createproject/add">
     {{ csrf_field() }}
     <div class="container-fluid">
     <div class="form-group">
       <label for="projectName">Project Name</label>
       <input type="text" name="projectName" class="form-control" id="projectName" placeholder="Project Name" required>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea class="form-control" name="description" id="description" placeholder="Description" rows="3" required></textarea>
     </div>
     <div class="form-group">
       <label for="date">Date</label>
@@ -36,3 +40,4 @@
 </script> 
 
 @endsection
+
