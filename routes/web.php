@@ -23,12 +23,16 @@ Route::get('admin/sendmail', function () {
     return view('admin.sendmail');
 });
 
-Route::get('admin/sendmail', function () {
-    return view('admin.sendmail');
+Route::get('admin/newsletter', function () {
+    return view('admin.newsletter');
 });
 
 Route::get('admin/viewUsers', function () {
     return view('admin.viewUserdetail');
 });
 
-Route::post('/create','MailController@store');
+Auth::routes();
+Route::post('admin/newsletter','NewsletterController@store');
+
+
+Route::get('/home', 'HomeController@index')->name('home');
