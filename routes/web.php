@@ -15,15 +15,17 @@ Route::get('/', function () {
     return view('layouts.welcome');
 });
 
-Route::get('admin', function () {
+/*Route::get('admin/home', function () {
     return view('layouts.admin-template');
 });
+*/
+
 
 Route::get('admin/sendmail', function () {
     return view('admin.sendmail');
 });
 
-Route::get('admin/newsletter', function () {
+Route::get('newsletter', function () {
     return view('admin.newsletter');
 });
 
@@ -31,8 +33,16 @@ Route::get('admin/viewUsers', function () {
     return view('admin.viewUserdetail');
 });
 
-Auth::routes();
-Route::post('admin/newsletter','NewsletterController@store');
+
+
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/admin/newsletter','NewsletterController@create');
+Route::post('/admin/newsletter','NewsletterController@store');
+Route::match(['get','post'],'/admin','AdminController@login');
+Route::get('/admin/dashboard','AdminController@dashboard');
+Route::get('/logout','AdminController@logout');
+Auth::routes();
+

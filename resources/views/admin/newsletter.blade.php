@@ -3,27 +3,41 @@
 @extends('layouts.admin-template')
 @section('content')
 
-@if(session('status'))
-<div class="containner">
-        {{session('status')}}
-@endif
 
-<div class="container">
-<h3>Subscribe to Newsletter</h3>
-<div class="row">
-<!-- newsletter subscription form -->
-<form action="{{url('admin/newsletter')}}" method="post">
-{{csrf_field()}}
-    <div class="form group">
-        <label for ="exampleInputEmail"> Email</label><br>
-        <input type="email" name="user_email" class="form-control">
 
-    <div>
-    
-    <br>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<!-- newsletter.blade.php -->
+
+    <div class="container">
+    @if (\Session::has('success'))
+      <div class="alert alert-success">
+        <p>{{ \Session::get('success') }}</p>
+      </div><br />
+     @endif
+     @if (\Session::has('failure'))
+      <div class="alert alert-danger">
+        <p>{{ \Session::get('failure') }}</p>
+      </div><br />
+     @endif
+      <h2>Newsletter Subscription</h2><br/>
+      <form method="post" action="{{url('/admin/newsletter')}}">
+        @csrf
+        </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-2">
+              <label for="Email">Email:</label>
+              <input type="text" class="form-control" name="email">
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+            <button type="submit" class="btn btn-success">Submit</button>
+          </div>
+        </div>
+      </form>
     </div>
-</div>
+  </body>
+
 
 @endsection('content')
