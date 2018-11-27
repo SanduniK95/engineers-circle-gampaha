@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="{{ asset("now-ui-landing/assets/img/favicon.png") }}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Engineer's Circle Gampaha
+    Engineers' Circle Gampaha
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!-- Fonts and icons -->
@@ -16,34 +16,16 @@
   <!-- CSS Files -->
   <link href="{{ asset("now-ui-landing/assets/css/bootstrap.min.css") }}" rel="stylesheet" />
   <link href="{{ asset("now-ui-landing/assets/css/now-ui-kit.css") }}" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="{{ asset("now-ui-landing/assets/demo/demo.css") }}" rel="stylesheet" />
+  <link href="{{ asset("now-ui-landing/assets/css/ecg-style.css") }}" rel="stylesheet" />
 </head>
 
 <body class="landing-page sidebar-collapse">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-success-new fixed-top navbar-transparent " color-on-scroll="400">
     <div class="container">
-      <div class="dropdown button-dropdown">
-        <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
-          <span class="button-bar"></span>
-          <span class="button-bar"></span>
-          <span class="button-bar"></span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-header">Dropdown header</a>
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">One more separated link</a>
-        </div>
-      </div>
       <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/now-ui-kit/index.html" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
-          Now Ui Kit
+        <a class="navbar-brand" href="">
+          Engineers' Circle Gampaha
         </a>
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-bar top-bar"></span>
@@ -51,31 +33,25 @@
           <span class="navbar-toggler-bar bottom-bar"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="{{ asset("now-ui-landing/assets/img/blurred-image-1.jpg") }}">
+      <div class="collapse navbar-collapse navbar-collapse justify-content-end" id="navigation">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Back to Kit</a>
+            <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/creativetimofficial/now-ui-kit/issues">Have an issue?</a>
+            <a class="nav-link" href="#story">Our Story</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
-              <i class="fab fa-twitter"></i>
-              <p class="d-lg-none d-xl-none">Twitter</p>
-            </a>
+            <a class="nav-link" href="#memories">Our Memories</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
-              <i class="fab fa-facebook-square"></i>
-              <p class="d-lg-none d-xl-none">Facebook</p>
-            </a>
+            <a class="nav-link" href="#contact">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
-              <i class="fab fa-instagram"></i>
-              <p class="d-lg-none d-xl-none">Instagram</p>
-            </a>
+            <a class="nav-link" href="#">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Log In</a>
           </li>
         </ul>
       </div>
@@ -84,43 +60,33 @@
   <!-- End Navbar -->
   <div class="wrapper">
     <div class="page-header page-header-small">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('{{ asset("now-ui-landing/assets/img/bg6.jpg") }}');">
+      <div class="page-header-image" data-parallax="true" style="background-image: url('{{ asset("now-ui-landing/assets/img/DSC_0215_edit.jpg") }}');">
       </div>
       <div class="content-center">
         <div class="container">
-          <h1 class="title">This is our great company.</h1>
-          <div class="text-center">
-            <a href="#pablo" class="btn btn-success-new btn-icon btn-round">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href="#pablo" class="btn btn-success-new btn-icon btn-round">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#pablo" class="btn btn-success-new btn-icon btn-round">
-              <i class="fab fa-google-plus"></i>
-            </a>
-          </div>
+          <h1 class="title">Engineers' Circle Gampaha</h1>
         </div>
       </div>
     </div>
-    <div class="section section-about-us">
+    <div class="section section-about-us" id="about">
       <div class="container">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title">Who we are?</h2>
-            <h5 class="description">According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.</h5>
+            <h5 class="description"><b>Engineers' Circle Gampaha</b> is a forum for Engineers to share their experiences and enhance the relationships among the fellow Engineers towards the betterment of society.</h5>
           </div>
         </div>
-        <div class="separator separator-success-new"></div>
+        <div class="separator separator-success-new" id="story"></div>
         <div class="section-story-overview">
           <div class="row">
             <div class="col-md-6">
               <div class="image-container image-left" style="background-image: url('{{ asset("now-ui-landing/assets/img/login.jpg") }}')">
                 <!-- First image on the left side -->
-                <p class="blockquote blockquote-success-new">"Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly"
+                <p class="blockquote blockquote-success-new">
+                  <small>We are ECG!</small>
                   <br>
                   <br>
-                  <small>-NOAA</small>
+                "For 20 years we at ECG have worked hand in hand and served the community in many ways."
                 </p>
               </div>
               <!-- Second image on the left side of the article -->
@@ -129,23 +95,60 @@
             <div class="col-md-5">
               <!-- First image on the right side, above the article -->
               <div class="image-container image-right" style="background-image: url('{{ asset("now-ui-landing/assets/img/bg1.jpg") }}')"></div>
-              <h3>So what does the new record for the lowest level of winter ice actually mean</h3>
-              <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
+              <h2 class="title">Our Story</h2>
+              <p>The Engineers' Circle was established on 4th October 1998 with the intention of creating a "forum for Engineers in the Gampaha District to share their experiences and contribute towards the betterment of the society." Established with the participation of twenty Engineers residing in and around of Gampaha, present membership boasts of over two hundred members spread over government and private sectors.
               </p>
-              <p>
-                For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade.
+              <p>ECG is a non profit organization  and holds its events regularly, most preferably quarterly. The activities are mainly concentrated on Corporate Social Responsibility (CSR).
               </p>
-              <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
+              <p>A vital element in the Circle’s community engagement strategy is member volunteerism. The ECG functions on the assistance of the Circle's member volunteers in all its CSR projects. Member volunteerism is also a means of attracting and retaining members, with new recruits being made aware of volunteering opportunities and encouraged to volunteer as a part of the CSR programme of the ECG. More than 100 member volunteers along with their family members engage in projects undertaken by the ECG each year.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="section section-team text-center">
+    <div class="section section-carousel text-center" id="memories">
       <div class="container">
-        <h2 class="title">Here is our team</h2>
-        <div class="team">
+        <h2 class="title">Our Memories</h2>
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="https://images.pexels.com/photos/1624254/pexels-photo-1624254.jpeg?auto=compress&cs=tinysrgb&h=350" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>...</h5>
+                <p>...</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://images.pexels.com/photos/1443657/pexels-photo-1443657.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>...</h5>
+                <p>...</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://images.pexels.com/photos/673803/pexels-photo-673803.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>...</h5>
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!-- <div class="team">
           <div class="row">
             <div class="col-md-4">
               <div class="team-player">
@@ -183,10 +186,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
-    <div class="section section-contact-us text-center">
+    <div class="section section-contact-us text-center" id="contact">
       <div class="container">
         <h2 class="title">Want to work with us?</h2>
         <p class="description">Your project is very important to us.</p>
@@ -223,29 +226,24 @@
         <nav>
           <ul>
             <li>
-              <a href="https://www.creative-tim.com">
-                Creative Tim
-              </a>
-            </li>
+              <i class="fa fa-envelope"></i>
+              &nbsp; 57, Vijaya Road, Gampaha
+            </li><br>
             <li>
-              <a href="http://presentation.creative-tim.com">
-                About Us
-              </a>
-            </li>
+              <i class="fas fa-phone"></i>
+              &nbsp; 033 222 6322
+            </li><br>
             <li>
-              <a href="http://blog.creative-tim.com">
-                Blog
-              </a>
+              <i class="fas fa-at"></i>
+              &nbsp; info@engineerscirclegampaha.org
             </li>
           </ul>
         </nav>
         <div class="copyright" id="copyright">
-          &copy;
+          Copyright &copy;
           <script>
             document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-          </script>, Designed by
-          <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by
-          <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+          </script> Engineers' Circle Gampaha
         </div>
       </div>
     </footer>
@@ -261,7 +259,7 @@
   <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
   <script src="{{ asset("now-ui-landing/assets/js/plugins/bootstrap-datepicker.js") }}" type="text/javascript"></script>
   <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
   <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
   <script src="{{ asset("now-ui-landing/assets/js/now-ui-kit.js?v=1.2.0") }}" type="text/javascript"></script>
 </body>

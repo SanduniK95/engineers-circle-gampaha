@@ -46,3 +46,14 @@ Route::get('/admin/dashboard','AdminController@dashboard');
 Route::get('/logout','AdminController@logout');
 Auth::routes();
 
+Route::post('/create','MailController@store');
+
+Route::post('admin/create_project/add','projectController@add');
+
+Auth::routes();
+
+
+
+Route::get('admin/createproject',function(){
+	return view('admin/createproject');
+});
