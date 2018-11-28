@@ -57,3 +57,5 @@ Auth::routes();
 Route::get('admin/createproject',function(){
 	return view('admin/createproject');
 });
+
+Route::resource('outsideProject', 'OutsideProjectController');
