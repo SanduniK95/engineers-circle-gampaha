@@ -34,6 +34,8 @@
     <!-- Optionally, you can add icons to the links -->
     <li class="active"><a href="#"><i class="fa fa-link"></i> <span>View User details</span></a></li>
     <li><a href="{{url('admin/newsletter')}}"><i class="fa fa-link"></i> <span>Send Mail</span></a></li>
+    <li><a href="{{url('projects')}}"><i class="fa fa-link"></i> <span>Projects</span></a></li>
+    <li><a href="{{url('admin/createproject')}}"><i class="fa fa-link"></i> <span>Create Project</span></a></li>
     <li class="treeview">
       <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
         <span class="pull-right-container">
