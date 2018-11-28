@@ -33,10 +33,6 @@ Route::get('admin/viewUsers', function () {
     return view('admin.viewUserdetail');
 });
 
-
-
-
-
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin/newsletter','NewsletterController@create');

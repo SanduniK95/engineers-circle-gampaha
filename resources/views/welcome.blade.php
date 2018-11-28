@@ -23,7 +23,7 @@
       <div class="section-story-overview">
         <div class="row">
           <div class="col-md-6">
-            <div class="image-container image-left" style="background-image: url('{{ asset("now-ui-landing/assets/img/login.jpg") }}')">
+            <div class="image-container image-left" style="background-image: url('{{ asset("now-ui-landing/assets/img/460x270-img1.jpg") }}')">
               <!-- First image on the left side -->
               <p class="blockquote blockquote-success-new">
                 <small>We are ECG!</small>
@@ -33,11 +33,11 @@
               </p>
             </div>
             <!-- Second image on the left side of the article -->
-            <div class="image-container" style="background-image: url('{{ asset("now-ui-landing/assets/img/bg3.jpg") }}')"></div>
+            <div class="image-container" style="background-image: url('{{ asset("now-ui-landing/assets/img/DSC_0214.jpg") }}')"></div>
           </div>
           <div class="col-md-5">
             <!-- First image on the right side, above the article -->
-            <div class="image-container image-right" style="background-image: url('{{ asset("now-ui-landing/assets/img/bg1.jpg") }}')"></div>
+            <div class="image-container image-right" style="background-image: url('{{ asset("now-ui-landing/assets/img/tum.jpg") }}')"></div>
             <h2 class="title">Our Story</h2>
             <p>The Engineers' Circle was established on 4th October 1998 with the intention of creating a "forum for Engineers in the Gampaha District to share their experiences and contribute towards the betterment of the society." Established with the participation of twenty Engineers residing in and around of Gampaha, present membership boasts of over two hundred members spread over government and private sectors.
             </p>
@@ -58,28 +58,20 @@
           <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselIndicators" data-slide-to="1"></li>
           <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselIndicators" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="https://images.pexels.com/photos/1624254/pexels-photo-1624254.jpeg?auto=compress&cs=tinysrgb&h=350" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>...</h5>
-              <p>...</p>
-            </div>
+            <img class="d-block w-100" src="{{ asset("now-ui-landing/assets/img/DSC_0215.jpg") }}" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://images.pexels.com/photos/1443657/pexels-photo-1443657.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>...</h5>
-              <p>...</p>
-            </div>
+            <img class="d-block w-100" src="{{ asset("now-ui-landing/assets/img/460x270-img1.jpg") }}" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="https://images.pexels.com/photos/673803/pexels-photo-673803.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>...</h5>
-              <p>...</p>
-            </div>
+            <img class="d-block w-100" src="{{ asset("now-ui-landing/assets/img/tum.jpg") }}" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{{ asset("now-ui-landing/assets/img/DSC_0214.jpg") }}" alt="Fourth slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -99,6 +91,22 @@
       <p class="description">Drop a message to us about your CSR projects.</p>
       <div class="row">
         <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
+          @if(count($errors) > 0)
+            <!-- Error Message -->
+            <div class="alert outProjectError">
+              <ul>
+              @foreach($errors->all() as $error)
+                <li>  {{ $error }} </li>
+              @endforeach
+              </ul>
+            </div>
+          @endif
+          @if(\Session::has('success'))
+            <!-- Success Message -->
+            <div class="alert outProjectSuccess">
+              <p> {{ \Session::get('success') }} </p>
+            </div>
+          @endif
           <form action="{{ url('outsideProject') }}" method="POST">
             <div class="input-group input-lg">
               <div class="input-group-prepend">
@@ -120,7 +128,7 @@
               <textarea class="form-control" name="message" rows="4" cols="80" placeholder="Type a message"></textarea>
             </div>
             <div class="send-button">
-              <input type="submit" class="btn btn-success-new btn-round btn-block btn-lg" value="Send Message">
+              <input type="submit" class="btn btn-success-new btn-round btn-block btn-lg" value="Send Message" data-toggle="modal" data-target="#successModal">
             </div>
           </form>
         </div>

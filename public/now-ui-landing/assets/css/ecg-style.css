@@ -111,3 +111,11 @@ footer div nav ul li {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.outProjectError {
+  background-color: #fa4e6a;
+}
+
+.outProjectSuccess {
+  background-color: #00A65A;
+}
