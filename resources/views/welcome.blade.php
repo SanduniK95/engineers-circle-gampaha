@@ -106,7 +106,7 @@
                   <i class="now-ui-icons users_circle-08"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" placeholder="First Name...">
+              <input type="text" class="form-control" name="full_name" placeholder="Full Name">
             </div>
             <div class="input-group input-lg">
               <div class="input-group-prepend">
@@ -114,10 +114,10 @@
                   <i class="now-ui-icons ui-1_email-85"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" placeholder="Email...">
+              <input type="text" class="form-control" name="email" placeholder="Email">
             </div>
             <div class="textarea-container">
-              <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
+              <textarea class="form-control" name="message" rows="4" cols="80" placeholder="Type a message"></textarea>
             </div>
             <div class="send-button">
               <input type="submit" class="btn btn-success-new btn-round btn-block btn-lg" value="Send Message">

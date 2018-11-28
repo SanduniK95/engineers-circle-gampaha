@@ -35,7 +35,14 @@ class OutsideProjectController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Insert data to mysql table
+        $outsideProject = new OutsideProject([
+            'full_name' => $request->input('full_name'),
+            'email' => $request->input('email'),
+            'message' => $request->input('message')
+        ]);
+
+        $outsideProject->save();
     }
 
     /**
