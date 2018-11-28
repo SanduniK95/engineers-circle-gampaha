@@ -40,7 +40,7 @@
       </a>
       <ul class="treeview-menu">
         <li><a href="{{url('admin/createproject')}}"><i class="fa fa-folder-plus"></i> <span>Create Project</span></a></li>
-        <li><a href="{{url('admin/createproject')}}"><i class="fa fa-folder-open"></i> <span>Project Requests</span></a></li>
+        <li><a href="{{url('admin/viewoutproject')}}"><i class="fa fa-folder-open"></i> <span>Project Requests</span></a></li>
       </ul>
     </li>
 

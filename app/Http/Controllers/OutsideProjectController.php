@@ -14,7 +14,9 @@ class OutsideProjectController extends Controller
      */
     public function index()
     {
-        //
+        // Retrieve Project Requests data from the database
+        $outsideProject = OutsideProject::all()->toArray();
+        return view('admin.viewoutproject', compact('outsideProject'));
     }
 
     /**

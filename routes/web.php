@@ -53,4 +53,8 @@ Route::get('admin/createproject',function(){
 	return view('admin/createproject');
 });
 
+Route::get('admin/viewoutproject',function(){
+	return view('outsideproject/viewoutproject');
+});
+
 Route::resource('outsideProject', 'OutsideProjectController');
