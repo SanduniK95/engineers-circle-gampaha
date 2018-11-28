@@ -1,4 +1,4 @@
-@extends('layouts.admin-template')
+@extends('layouts.admin-dashboard')
 
 @section('content')
   <form method="post" action="/admin/createproject/add">

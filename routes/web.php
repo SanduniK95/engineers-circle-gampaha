@@ -33,13 +33,15 @@ Route::get('admin/viewUsers', function () {
     return view('admin.viewUserdetail');
 });
 
-
-
-
+Route::get('admin/createproject',function(){
+	return view('admin/createproject');
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin/newsletter','NewsletterController@create');
+
+
 Route::post('/admin/newsletter','NewsletterController@store');
 Route::match(['get','post'],'/admin','AdminController@login');
 Route::get('/admin/dashboard','AdminController@dashboard');
@@ -48,12 +50,11 @@ Auth::routes();
 
 Route::post('/create','MailController@store');
 
-Route::post('admin/createproject/add','projectController@add');
+Route::post('/admin/createproject/add','projectController@add');
 
+Route::get('/projects','projectController@index');
 Auth::routes();
 
 
 
-Route::get('admin/createproject',function(){
-	return view('admin/createproject');
-});
+
