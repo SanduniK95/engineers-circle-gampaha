@@ -35,6 +35,12 @@ class OutsideProjectController extends Controller
      */
     public function store(Request $request)
     {
+        // Validate data
+        $this->validate($request, [
+            'email' => 'required',
+            'message' => 'required'
+        ]);
+
         // Insert data to mysql table
         $outsideProject = new OutsideProject([
             'full_name' => $request->input('full_name'),
@@ -43,6 +49,9 @@ class OutsideProjectController extends Controller
         ]);
 
         $outsideProject->save();
+
+        // Redirect to welcome page with success message
+        return redirect()->back()->with('success', 'Your Project request has been sent successfully!');
     }
 
     /**
