@@ -60,7 +60,7 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                                     document.getElementById('logout-form').submit();" style="display: inline-block;">
                                         {{ __('Logout') }}
                                     </a>
 
@@ -80,10 +80,6 @@
         </main>
     </div>
 
-      <!--   Core JS Files   -->
-    <script src="{{ asset("now-ui-landing/assets/js/core/jquery.min.js") }}" type="text/javascript"></script>
-    <script src="{{ asset("now-ui-landing/assets/js/core/popper.min.js") }}" type="text/javascript"></script>
-    <script src="{{ asset("now-ui-landing/assets/js/core/bootstrap.min.js") }}" type="text/javascript"></script>
     <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
     <script src="{{ asset("now-ui-landing/assets/js/plugins/bootstrap-switch.js") }}"></script>
     <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->

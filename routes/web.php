@@ -42,3 +42,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('admin/createproject',function(){
 	return view('admin/createproject');
 });
+
+Route::resource('outsideProject', 'OutsideProjectController');
