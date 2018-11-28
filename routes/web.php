@@ -52,7 +52,7 @@ Route::post('admin/createproject/add','projectController@add');
 
 Auth::routes();
 
-Route::get('/projects','projectController@index');
+Route::get('admin/projects','projectController@index');
 
 Route::get('admin/createproject',function(){
 	return view('admin/createproject');
