@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,6 +9,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -44,9 +44,11 @@ Auth::routes();
 
 Route::post('/create','MailController@store');
 
-Route::post('admin/create_project/add','projectController@add');
+Route::post('admin/createproject/add','projectController@add');
 
 Auth::routes();
+
+Route::get('admin/projects','projectController@index');
 
 Route::get('admin/createproject',function(){
 	return view('admin/createproject');
