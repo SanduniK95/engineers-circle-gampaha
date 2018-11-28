@@ -48,7 +48,7 @@ Auth::routes();
 
 Route::post('/create','MailController@store');
 
-Route::post('admin/create_project/add','projectController@add');
+Route::post('admin/createproject/add','projectController@add');
 
 Auth::routes();
 

@@ -32,9 +32,6 @@
         margin: 20px;
         border: 1px white;
         background-color: whitesmoke;
-        /*outline-color: white;
-        outline-width: 1px;
-        outline-style: inset;*/
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 </style>
