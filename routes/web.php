@@ -40,7 +40,6 @@ Route::post('/admin/newsletter','NewsletterController@store');
 Route::match(['get','post'],'/admin','AdminController@login');
 Route::get('/admin/dashboard','AdminController@dashboard');
 Route::get('/logout','AdminController@logout');
-Auth::routes();
 
 Route::post('/create','MailController@store');
 
